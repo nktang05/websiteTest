@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Tang | Student Page</title>
+
+    <style>
+        .container {
+            width: 90%;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: blue;
+            background-color: lightblue;
+            margin: 0 auto;
+        }
+
+        img {
+            height: 200px; 
+            width: auto;
+            border-radius: 15px 0px;
+        }
+
+        strong {
+            font-size: 1.3em;
+        }
+
+        h1 {
+            font-size: 2.0em;
+        }
+
+        h2 {
+            font-size: 1.0em;
+        }
+        #header{
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .left{
+            width: 500px;
+        }
+        .right{
+            width: 500px;
+        }
+
+        @media (min-width: 600px) {
+            .left, .right {
+                width: 50%; /* Two columns on larger screens */
+            }
+        }
+        @media (max-width: 767px) {
+            .content {
+                flex-direction: column; /* Change to column direction for mobile */
+            }
+
+            .left, .right {
+                width: 100%; /* Single column layout on mobile */
+            }
+        }
+
+    </style>
+  </head>
+
+  <body>
+    
+    <div class = "container">
+
+        <div id = "header">
+            <h1>Nicole Tang</h1>
+
+            <a href = "mailto:nktang@usc.edu">nktang@usc.edu</a>
+
+        </div>
+        
+        <div class = "content"> 
+            <div class = "left">
+                <p>Favorite color: <strong><span class="highlight">blue</span></strong></p>
+            
+                <p>My favorite website: <a href = "https://www.nytimes.com/games/wordle/index.html">Wordle</a></p>
+                
+                <p>My favorite activity: Getting coffee with friends</p>
+    
+                <img src = "coffee.jpg" alt = "getting coffee">
+            </div>
+            
+            <div class ="right">
+                <h2>Classes I am enrolled in:</h2>
+                <ul>
+                    <li>ITP104: Introduction to Web Development</li>
+                    <li>IR308: Economic Globalization</li>
+                    <li>PM566: Introduction to Health Data Science</li>
+                    <li>PM592: Regression Analysis for Health Data Science</li>
+                </ul>
+            </div>
+
+        </div>
+            
+        <div class = "content">
+            <div class = "left">
+                <p>Completed Assignments</p>
+                <ul>
+                    <li> <a href = "assignment_01/resume.html">Assignment 1</a></li>
+                    <li> <a href = "assignment_02/assignment02.html">Assignment 2</a></li>
+                    <li> <a href = "assignment_03/assignment03.html">Assignment 3</a></li>
+                    <li> <a href = "assignment_04/assignment04.html">Assignment 4</a></li>
+                    <li> <a href = "assignment_05/assignment05.html">Assignment 5</a></li>
+                    <li> <a href = "assignment_06/assignment06.html">Assignment 6</a></li>
+                    <li> <a href = "assignment_07/assignment7.html">Assignment 7</a></li>
+                </ul>
+            </div>
+            
+            <div class ="right">
+                <p>Completed Labs</p>
+                <ul>
+                    <li><a href = "index.html">Lab 02</a></li>
+                    <li><a href = "lab_03/resume3.html">Lab 03</a></li>
+                    <li><a href = "index.html">Lab 04</a></li>
+                    <li><a href = "lab_05/lab05.html">Lab 05</a></li>
+                    <li><a href = "lab_06/lab6.html">Lab 06</a></li>
+                    <li><a href = "lab_07/lab7.html">Lab 07- Extra Credit</a></li>
+                    <li><a href = "lab_09/lab9.html">Lab 09</a></li>
+                    <li><a href = "lab_10/lab_10.html">Lab 10</a></li>
+                </ul>
+            </div>
+        </div>
+            
+        
+        
+        
+    </div>
+  </body>
+</html>
